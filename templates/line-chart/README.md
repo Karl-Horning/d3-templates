@@ -19,6 +19,7 @@ To run this example:
 
 - `line-chart.html`: HTML file containing the Line Chart implementation.
 - `line-chart.js`: JavaScript file with the converted code from TypeScript, including JSDoc and comments.
+- `data.js`: JavaScript file with the key data.
 - `d3.v7.min.js`: D3 library version 7 minified file.
 - `README.md`: This README file providing information about the example.
 

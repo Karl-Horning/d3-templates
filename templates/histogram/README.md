@@ -19,6 +19,7 @@ To run this example:
 
 - `histogram.html`: HTML file containing the Histogram implementation.
 - `histogram.js`: JavaScript file with the converted code from TypeScript, including JSDoc and comments.
+- `data.js`: JavaScript file with the key data.
 - `d3.v6.min.js`: D3 library version 6 minified file.
 - `README.md`: This README file providing information about the example.
 
