@@ -1,84 +1,135 @@
-# D3 Templates
+# 📊 D3 Templates
 
-This repository, **d3-templates**, contains examples and templates for creating data visualizations using the D3.js library. Each example is converted from TypeScript to JavaScript, and JSDoc comments and explanations are added for better understanding.
+---
 
-## Examples
+## 📖 Table of Contents
 
-1. [Area Chart](./templates/area-chart/): Illustrates the usage of an area chart to visualize data trends over time. [View Example](./templates/area-chart/area-chart.js)
+- [📊 D3 Templates](#-d3-templates)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🤓 Overview](#-overview)
+  - [📦 Installation](#-installation)
+  - [🚀 Scripts / Usage](#-scripts--usage)
+  - [📁 Project Structure](#-project-structure)
+  - [📸 Demo](#-demo)
+  - [🧪 Known Issues](#-known-issues)
+  - [📌 To Do](#-to-do)
+  - [🙋 FAQ](#-faq)
+  - [📄 Licence](#-licence)
+  - [👤 Author / Credits](#-author--credits)
 
-2. [Bar Chart](./templates/bar-chart/): Demonstrates the creation of a bar chart to represent data using rectangular bars. [View Example](./templates/bar-chart/bar-chart.js)
+---
 
-3. [Donut Chart](./templates/donut-chart/): Visualizes categorical data in a circular form, with dynamic resizing and interactive tooltips. [View Example](./templates/donut-chart/donut-chart.js)
+## 🤓 Overview
 
-4. [Histogram](./templates/histogram/): Utilizes a histogram to display the distribution of data in a set of bins. [View Example](./templates/histogram/histogram.js)
+A small collection of beginner-friendly D3.js chart templates, converted from TypeScript to JavaScript and annotated with JSDoc-style comments. Each example includes minimal HTML/JS files that you can open directly in your browser. Useful for learning or remixing.
 
-5. [Horizontal Bar Chart](./templates/horizontal-bar-chart): Represents data with a horizontal bar chart, dynamically adjusting to different datasets. [View Example](./templates/horizontal-bar-chart/horizontal-bar-chart.js)
+---
 
-6. [Line Chart](./templates/line-chart/): Illustrates the creation of a line chart to represent data points connected by straight line segments. [View Example](./templates/line-chart/line-chart.js)
+## 📦 Installation
 
-## Getting Started
+Clone the repository and explore locally:
 
-To run the examples:
+```bash
+git clone https://github.com/your-username/d3-templates.git
+cd d3-templates
+```
 
-1. Clone or download this repository to your local machine.
-2. Open the HTML files (in other words, `area-chart.html`, `bar-chart.html`, `donut-chart.html`, `histogram.html`, `horizontal-bar-chart.html`, `line-chart.html`) in a web browser.
+No build step is required — just open the `.html` files in your browser.
 
-## Project Structure
+---
 
-- `area-chart`: Folder containing the Area Chart example.
-  - `area-chart.html`: HTML file.
-  - `area-chart.js`: JavaScript file.
-  - `data.js`: JavaScript file with the key data.
-  - `d3.v6.min.js`: D3 library version 6 minified file.
-  - `README.md`: README specific to the Area Chart example.
+## 🚀 Scripts / Usage
 
-- `bar-chart`: Folder containing the Bar Chart example.
-  - `bar-chart.html`: HTML file.
-  - `bar-chart.js`: JavaScript file.
-  - `d3.v6.min.js`: D3 library version 6 minified file.
-  - `README.md`: README specific to the Bar Chart example.
+There are no scripts — each template is self-contained and runs in the browser. To view an example:
 
-- `donut-chart`: Folder containing the Donut Chart example.
-  - `donut-chart.html`: HTML file.
-  - `donut-chart.js`: JavaScript file.
-  - `d3.v6.min.js`: D3 library version 6 minified file.
-  - `README.md`: README specific to the Donut Chart example.
+```bash
+open templates/area-chart/area-chart.html
+```
 
-- `histogram`: Folder containing the Histogram example.
-  - `histogram.html`: HTML file.
-  - `histogram.js`: JavaScript file.
-  - `data.js`: JavaScript file with the key data.
-  - `d3.v6.min.js`: D3 library version 6 minified file.
-  - `README.md`: README specific to the Histogram example.
+Or right-click the file and choose **Open in browser**.
 
-- `horizontal-bar-chart`: Folder containing the Horizontal Bar Chart example.
-  - `horizontal-bar-chart.html`: HTML file.
-  - `horizontal-bar-chart.js`: JavaScript file.
-  - `d3.v6.min.js`: D3 library version 6 minified file.
-  - `README.md`: README specific to the Horizontal Bar Chart example.
+---
 
-- `line-chart`: Folder containing the Line Chart example.
-  - `line-chart.html`: HTML file.
-  - `line-chart.js`: JavaScript file.
-  - `data.js`: JavaScript file with the key data.
-  - `d3.v6.min.js`: D3 library version 6 minified file.
-  - `README.md`: README specific to the Line Chart example.
+## 📁 Project Structure
 
-## Usage
+```text
+templates/
+├── area-chart/
+│   ├── area-chart.html       # Chart HTML
+│   ├── area-chart.js         # JS logic with D3
+│   ├── data.js               # Optional dataset
+│   ├── d3.v6.min.js          # D3 library (local)
+│   └── README.md             # Per-chart notes
+├── bar-chart/
+│   └── ...
+├── donut-chart/
+│   └── ...
+├── histogram/
+│   └── ...
+├── horizontal-bar-chart/
+│   └── ...
+├── line-chart/
+│   └── ...
+```
 
-Explore each example to understand how to create data visualizations using D3.js. Customize the code and datasets to fit your specific requirements.
+Each folder includes:
 
-## Tutorials
+- A chart HTML page
+- A JavaScript implementation with D3
+- A local D3.js build for offline use
 
-Tutorials on D3.js are available from:
-- [D3.js Getting Started](https://d3js.org/getting-started)
-- [FreeCodeCamp D3.js Tutorial](https://www.freecodecamp.org/news/d3js-tutorial-data-visualization-for-beginners/)
+---
 
-## Credits
+## 📸 Demo
 
-- D3.js library: [D3.js](https://d3js.org/)
-- Original templates and examples available on [Observable](https://observablehq.com/)
+Examples (open in browser):
 
-## License
+- [Area Chart](./templates/area-chart/area-chart.html)
+- [Bar Chart](./templates/bar-chart/bar-chart.html)
+- [Donut Chart](./templates/donut-chart/donut-chart.html)
+- [Histogram](./templates/histogram/histogram.html)
+- [Horizontal Bar Chart](./templates/horizontal-bar-chart/horizontal-bar-chart.html)
+- [Line Chart](./templates/line-chart/line-chart.html)
 
-This project is licensed under the [MIT License](LICENSE).
+---
+
+## 🧪 Known Issues
+
+- Some templates use hardcoded data or basic layouts.
+- Layouts are unstyled beyond SVG defaults — this is intentional to focus on D3.
+- The local `d3.v6.min.js` may be outdated; consider replacing with a CDN link if needed.
+
+---
+
+## 📌 To Do
+
+- [x] Add per-chart READMEs
+- [x] Convert templates from TypeScript to JavaScript
+- [x] Add usage instructions to root README
+- [ ] Create GitHub Pages site to host live versions of each template
+- [ ] Embed preview iframes into the README or a demo page
+
+---
+
+## 🙋 FAQ
+
+**Q: Can I use these templates in my own project?**
+A: Yes! These are intentionally minimal — feel free to adapt and reuse.
+
+**Q: Why JavaScript instead of TypeScript?**
+A: The templates were originally written in TypeScript but converted for approachability. They’re now pure JS with JSDoc comments.
+
+**Q: Do I need to install anything to use these?**
+A: Nope — just open the `.html` files in your browser. No build tools, no npm.
+
+---
+
+## 📄 Licence
+
+MIT © 2025 Karl Horning
+
+---
+
+## 👤 Author / Credits
+
+Originally adapted from Observable notebooks and other D3 learning materials. Converted to JavaScript and annotated by [Karl Horning](https://github.com/Karl-Horning)
