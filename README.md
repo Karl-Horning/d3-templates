@@ -1,31 +1,31 @@
-# 📊 D3 Templates
+# D3 Templates
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
-- [📊 D3 Templates](#-d3-templates)
-  - [📖 Table of Contents](#-table-of-contents)
-  - [🤓 Overview](#-overview)
-  - [📦 Installation](#-installation)
-  - [🚀 Scripts / Usage](#-scripts--usage)
-  - [📁 Project Structure](#-project-structure)
-  - [📸 Demo](#-demo)
-  - [🧪 Known Issues](#-known-issues)
-  - [📌 To Do](#-to-do)
-  - [🙋 FAQ](#-faq)
-  - [📄 Licence](#-licence)
-  - [👤 Author / Credits](#-author--credits)
+- [D3 Templates](#d3-templates)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Scripts / Usage](#scripts--usage)
+  - [Project Structure](#project-structure)
+  - [Demo](#demo)
+  - [Known Issues](#known-issues)
+  - [To Do](#to-do)
+  - [FAQ](#faq)
+  - [Licence](#licence)
+  - [Author / Credits](#author--credits)
 
 ---
 
-## 🤓 Overview
+## Overview
 
 A small collection of beginner-friendly D3.js chart templates, converted from TypeScript to JavaScript and annotated with JSDoc-style comments. Each example includes minimal HTML/JS files that you can open directly in your browser. Useful for learning or remixing.
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repository and explore locally:
 
@@ -38,7 +38,7 @@ No build step is required — just open the `.html` files in your browser.
 
 ---
 
-## 🚀 Scripts / Usage
+## Scripts / Usage
 
 There are no scripts — each template is self-contained and runs in the browser. To view an example:
 
@@ -50,7 +50,7 @@ Or right-click the file and choose **Open in browser**.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 templates/
@@ -80,7 +80,7 @@ Each folder includes:
 
 ---
 
-## 📸 Demo
+## Demo
 
 Examples (open in browser):
 
@@ -93,7 +93,7 @@ Examples (open in browser):
 
 ---
 
-## 🧪 Known Issues
+## Known Issues
 
 - Some templates use hardcoded data or basic layouts.
 - Layouts are unstyled beyond SVG defaults — this is intentional to focus on D3.
@@ -101,7 +101,7 @@ Examples (open in browser):
 
 ---
 
-## 📌 To Do
+## To Do
 
 - [x] Add per-chart READMEs
 - [x] Convert templates from TypeScript to JavaScript
@@ -111,7 +111,7 @@ Examples (open in browser):
 
 ---
 
-## 🙋 FAQ
+## FAQ
 
 **Q: Can I use these templates in my own project?**
 A: Yes! These are intentionally minimal — feel free to adapt and reuse.
@@ -124,12 +124,12 @@ A: Nope — just open the `.html` files in your browser. No build tools, no npm.
 
 ---
 
-## 📄 Licence
+## Licence
 
 MIT © 2025 Karl Horning
 
 ---
 
-## 👤 Author / Credits
+## Author / Credits
 
 Originally adapted from Observable notebooks and other D3 learning materials. Converted to JavaScript and annotated by [Karl Horning](https://github.com/Karl-Horning)
