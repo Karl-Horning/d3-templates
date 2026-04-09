@@ -1,4 +1,4 @@
-// Declare the chart dimensions and margins.
+// Chart dimensions and margins.
 const width = 960;
 const height = 500;
 const marginTop = 20;
@@ -6,25 +6,37 @@ const marginRight = 20;
 const marginBottom = 30;
 const marginLeft = 40;
 
-// Bin the data.
+/**
+ * Bins the unemployment data into 40 intervals.
+ * @type {d3.Bin<object, number>[]}
+ */
 const bins = d3
     .bin()
     .thresholds(40)
     .value((d) => d.rate)(unemployment);
 
-// Declare the x (horizontal position) scale.
+/**
+ * Linear scale for the x-axis, spanning the full range of bin boundaries.
+ * @type {d3.ScaleLinear<number, number>}
+ */
 const x = d3
     .scaleLinear()
     .domain([bins[0].x0, bins[bins.length - 1].x1])
     .range([marginLeft, width - marginRight]);
 
-// Declare the y (vertical position) scale.
+/**
+ * Linear scale for the y-axis, based on the count of items in each bin.
+ * @type {d3.ScaleLinear<number, number>}
+ */
 const y = d3
     .scaleLinear()
     .domain([0, d3.max(bins, (d) => d.length)])
     .range([height - marginBottom, marginTop]);
 
-// Create the SVG container.
+/**
+ * SVG container.
+ * @type {d3.Selection<SVGSVGElement, undefined, null, undefined>}
+ */
 const svg = d3
     .create("svg")
     .attr("width", width)

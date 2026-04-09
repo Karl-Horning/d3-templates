@@ -1,10 +1,10 @@
 /**
- * Dataset representing the frequency of letters in the alphabet.
- *
  * @typedef {Object} AlphabetEntry
  * @property {string} letter - The letter.
- * @property {number} frequency - The frequency of the letter.
+ * @property {number} frequency - The frequency as a decimal.
  */
+
+/** @type {AlphabetEntry[]} */
 const alphabet = [
     { letter: "A", frequency: 0.08167 },
     { letter: "B", frequency: 0.01492 },

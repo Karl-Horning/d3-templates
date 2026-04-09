@@ -1,4 +1,4 @@
-// Declare the chart dimensions and margins.
+// Chart dimensions and margins.
 const width = 928;
 const height = 500;
 const marginTop = 20;
@@ -6,31 +6,46 @@ const marginRight = 30;
 const marginBottom = 30;
 const marginLeft = 40;
 
-// Parse date strings into JavaScript Date objects
+/**
+ * Parses ISO date strings into JavaScript Date objects.
+ * @type {function(string): Date|null}
+ */
 const parseDate = d3.utcParse("%Y-%m-%dT%H:%M:%S.%LZ");
 aapl.forEach((d) => {
     d.date = parseDate(d.date);
 });
 
-// Declare the x (horizontal position) scale.
+/**
+ * Time scale for the x-axis.
+ * @type {d3.ScaleTime<number, number>}
+ */
 const x = d3.scaleUtc(
     d3.extent(aapl, (d) => d.date),
     [marginLeft, width - marginRight]
 );
 
-// Declare the y (vertical position) scale.
+/**
+ * Linear scale for the y-axis.
+ * @type {d3.ScaleLinear<number, number>}
+ */
 const y = d3
     .scaleLinear()
     .domain([0, d3.max(aapl, (d) => d.close)])
     .range([height - marginBottom, marginTop]);
 
-// Declare the line generator.
+/**
+ * Line path generator.
+ * @type {d3.Line<object>}
+ */
 const line = d3
     .line()
     .x((d) => x(d.date))
     .y((d) => y(d.close));
 
-// Create the SVG container.
+/**
+ * SVG container.
+ * @type {d3.Selection<SVGSVGElement, undefined, null, undefined>}
+ */
 const svg = d3
     .create("svg")
     .attr("width", width)

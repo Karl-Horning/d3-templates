@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} LetterFrequency
+ * @property {string} letter - The letter.
+ * @property {number} frequency - The frequency as a decimal.
+ */
+
+/** @type {LetterFrequency[]} */
 const data = [
     { letter: "A", frequency: 0.08167 },
     { letter: "B", frequency: 0.01492 },
@@ -27,7 +34,7 @@ const data = [
     { letter: "Z", frequency: 0.00074 },
 ];
 
-// Declare the chart dimensions and margins.
+// Chart dimensions and margins.
 const width = 928;
 const height = 500;
 const marginTop = 30;
@@ -35,7 +42,10 @@ const marginRight = 0;
 const marginBottom = 30;
 const marginLeft = 40;
 
-// Declare the x (horizontal position) scale.
+/**
+ * Band scale for the x-axis, ordered by descending frequency.
+ * @type {d3.ScaleBand<string>}
+ */
 const x = d3
     .scaleBand()
     .domain(
@@ -44,17 +54,23 @@ const x = d3
             ([d]) => -d.frequency,
             (d) => d.letter
         )
-    ) // descending frequency
+    )
     .range([marginLeft, width - marginRight])
     .padding(0.1);
 
-// Declare the y (vertical position) scale.
+/**
+ * Linear scale for the y-axis.
+ * @type {d3.ScaleLinear<number, number>}
+ */
 const y = d3
     .scaleLinear()
     .domain([0, d3.max(data, (d) => d.frequency)])
     .range([height - marginBottom, marginTop]);
 
-// Create the SVG container.
+/**
+ * SVG container.
+ * @type {d3.Selection<SVGSVGElement, undefined, null, undefined>}
+ */
 const svg = d3
     .create("svg")
     .attr("width", width)
