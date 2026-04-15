@@ -28,10 +28,10 @@ open templates/area-chart/area-chart.html
 | [horizontal-bar-chart](./templates/horizontal-bar-chart/) | English letter frequency (horizontal) |
 | [line-chart](./templates/line-chart/) | AAPL stock prices as a line |
 
-## Issues
+## Feedback
 
 This repo is no longer actively maintained, but you can still [open an issue](https://github.com/Karl-Horning/d3-templates/issues) if you find a problem. Please raise one issue per bug.
 
-## Licence
+## License
 
-MIT © 2024 [Karl Horning](https://github.com/Karl-Horning/)
+Released under the [MIT License](./LICENSE) by [Karl Horning](https://github.com/Karl-Horning).
